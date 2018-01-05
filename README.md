@@ -1,6 +1,7 @@
 # monopoli%
 
-Programa que eu fiz para baixar todas as monografias de um determinado ano e curso da Escola Politécnica da Ufrj (http://monografias.poli.ufrj.br/) e depois acrescentar num banco de dados Sqlite.
+Programa que eu fiz para baixar todas as monografias em pdf de um determinado ano e curso da Escola Politécnica da Ufrj (http://monografias.poli.ufrj.br/) e depois acrescentar num banco de dados Sqlite os títulos das teses e as palavras-chave contidas em cada arquivo pdf.
+
 
 ## Pré-requisitos
 
@@ -15,14 +16,16 @@ pip install requests
 pip install textract
 ```
 
-### Execução
+
+## Execução
 
 Para executar basta rodar o comando no diretório do arquivo e mágica acontecerá
 
 ```
 python main.py
 ```
-#### Tabelas Sql
+
+## Tabelas Sql
 
 A arquitetura SQL escolhida foi a de duas tabelas: Uma tabela chamada teses com um id e o título e outra chamada chaves que possui a id referente a de um título da tabela teses e as palavras-chaves na coluna chave. Como no exemplo mostrado a seguir:
 
