@@ -24,17 +24,24 @@ python main.py
 ```
 #### Tabelas Sql
 
-A arquitetura SQL escolhida foi a de duas tabelas: Uma tabela chamada teses com um id e o título e outra chamada chaves que possui a id referente a de um título da tabela teses e as palavras-chaves na coluna chave. Como no esquema mostrado abaixo:
+A arquitetura SQL escolhida foi a de duas tabelas: Uma tabela chamada teses com um id e o título e outra chamada chaves que possui a id referente a de um título da tabela teses e as palavras-chaves na coluna chave. Como no exemplo mostrado a seguir:
+
 
 table teses
-+--------+--------------------------+
-| id     | título                   |
-+--------+--------------------------+
-|   1    | ALIMENTADOR DE AN...     |
+
+| id    | titulo                                                                                      |
+| ---   | ---                                                                                         |
+| 1     | ALIMENTADOR DE ANIMAIS DOMÉSTICOS AUTOMÁTICO COM COMUNICAÇÃO À DISTÂNCIA                    |
+| 2     | AMBIENTE PARA TESTES EM TEMPO REAL DE FILTROS ADAPTATIVOS PARA CANCELAMENTO DE ECO ACÚSTICO |
+| ...   | ...                                                                                         |
 
 table chaves
-+--------+-------------------------+
-| id     | chave                   |
-+--------+-------------------------+
-|   1    | sistemas embarcados     |
-|   1    | alimentação automática  |
+
+| id    | chave                   |
+| ---   | ---                     |
+| 1     | sistemas embarcados     |
+| 1     | alimentação automática  |
+| 2     | filtros adaptativos     |
+| 2     | cancelamento de eco     |
+| ...   | ...                     |
+
